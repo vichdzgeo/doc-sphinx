@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Guía para documentar con Sphinx &mdash; documentación de MEGADAPT - 1.0.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Presión social" href="presion_social.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MEGADAPT
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tabla de contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sleuth.html">Crecimiento Urbano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clima.html">Clima urbano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="escorrentia.html">Balance hídrico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="agua_superficial.html">Agua superficial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="salud.html">Riesgo a la salud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="escasez.html">Escasez</a></li>
+<li class="toctree-l1"><a class="reference internal" href="presion_social.html">Presión social</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guía para documentar con Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#parrafos">Párrafos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marcadores-de-linea">Marcadores de línea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#listas">Listas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codigo-fuente">Código fuente</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tablas">Tablas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hipervinculos">Hipervinculos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#descargas">Descargas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#secciones">Secciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#imagenes">Imágenes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#archivos-separados-por-comas-csv">Archivos separados por comas (CSV)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ecuaciones">Ecuaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-example">Códigos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notas-a-pie-de-pagina">Notas a pie de página</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MEGADAPT</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Guía para documentar con Sphinx</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/guia_documentacion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="guia-para-documentar-con-sphinx">
+<h1>Guía para documentar con Sphinx<a class="headerlink" href="#guia-para-documentar-con-sphinx" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="parrafos">
+<h2>Párrafos<a class="headerlink" href="#parrafos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El párrafo es el bloque más básico en un documento rst, los párrafos son
+simplemente trozos de texto separados por uno o más líneas en blanco. La
+sangría es significativa en rst, por lo que todas las líneas del mismo
+párrafo deben alinearse a la izquierda con el mismo nivel de sangría.</p>
+</div>
+<div class="section" id="marcadores-de-linea">
+<h2>Marcadores de línea<a class="headerlink" href="#marcadores-de-linea" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="docutils">
+<dt>El marcado estándar en línea rst es bastante simple de usar</dt>
+<dd><ul class="first last simple">
+<li>un asterisco  *texto* para énfasis (cursíva)</li>
+<li>dos asteriscos  **text** para énfasis fuerte (negrita)</li>
+<li>dos comillas inversas  ``texto`` para ejemplos de código</li>
+</ul>
+</dd>
+</dl>
+<p>Ejemplo:</p>
+<p><em>esto es un texto en cursivas</em></p>
+<p><strong>esto es un texto en negritas</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">esto</span> <span class="pre">es</span> <span class="pre">un</span> <span class="pre">bloque</span> <span class="pre">de</span> <span class="pre">código</span></code></p>
+</div>
+<div class="section" id="listas">
+<h2>Listas<a class="headerlink" href="#listas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para la generación de listas vasta con colocar un asterisco al pricipio de la
+línea, para lístas numéricas bien puede colocar 1. el número explicitamente
+o puede colocar #. al principio de la línea y se enumerarán de forma automática.</p>
+</div>
+<div class="section" id="codigo-fuente">
+<h2>Código fuente<a class="headerlink" href="#codigo-fuente" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los bloques de código litera se introducen al terminar un párrafo con el marcador
+especial <strong>::</strong> El bloque literal debe estar sangrado ( y, como todos los Párrafos
+, separados delos que lo rodean con líneas en blanco.)</p>
+<p>Este es un párrafo de texto normal. El siguiente párrafo es un ejemplo de código:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Puede</span> <span class="n">abarcar</span>
+
+<span class="n">diferentes</span> <span class="n">líneas</span>
+</pre></div>
+</div>
+<p>Este es un párrafo de texto normal de nuevo.</p>
+</div>
+<div class="section" id="tablas">
+<h2>Tablas<a class="headerlink" href="#tablas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Las tablas simples deben contener más de una fila y la primera columan no puede
+contener varias líneas:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+<span class="n">A</span>      <span class="n">B</span>      <span class="n">A</span> <span class="ow">and</span> <span class="n">B</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+<span class="kc">False</span>  <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">False</span>  <span class="kc">False</span>
+<span class="kc">False</span>  <span class="kc">True</span>   <span class="kc">False</span>
+<span class="kc">True</span>   <span class="kc">True</span>   <span class="kc">True</span>
+<span class="o">=====</span>  <span class="o">=====</span>  <span class="o">=======</span>
+</pre></div>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hipervinculos">
+<h2>Hipervinculos<a class="headerlink" href="#hipervinculos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para colocar hipervinculos a una palabra y redireccione al sitio web solcitado
+se tiene que colocar un guión bajo al finalizar la palabra. posteriormente
+se tiene que declarar e indicar el link.
+Ejemplo en rst:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Conozca</span> <span class="n">la</span> <span class="n">página</span> <span class="n">de</span> <span class="n">Python_</span> <span class="n">para</span> <span class="n">más</span> <span class="n">información</span><span class="o">.</span>
+
+<span class="o">..</span> <span class="n">_Python</span><span class="p">:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">python</span><span class="o">.</span><span class="n">org</span>
+</pre></div>
+</div>
+<p>Como se visualizaría en la página:</p>
+<p>Conozca la página de <a class="reference external" href="http://www.python.org">Python</a> para más información.</p>
+<div class="section" id="descargas">
+<h3>Descargas<a class="headerlink" href="#descargas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para agregar una liga donde el usuario pueda descargar algún tipo de archivo
+se usa la referencia <em>download</em>
+Ejemplo en rst :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>descarga el código de ejemplo :download:`codigo de ejemplo &lt;/../../example.py&gt;`.
+</pre></div>
+</div>
+<p>Como se visualizaría en la página.</p>
+<p>descarga el código de ejemplo <a class="reference download internal" download="" href="_downloads/eeaee728044f2ce92971e50b7b47fb1b/example.py"><code class="xref download docutils literal notranslate"><span class="pre">codigo</span> <span class="pre">de</span> <span class="pre">ejemplo</span></code></a>.</p>
+</div>
+</div>
+<div class="section" id="secciones">
+<h2>Secciones<a class="headerlink" href="#secciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<blockquote>
+<div><p>Los encabezados de sección se crean subrayando ( y opcionalmente, delinieando)
+el título de la sección con un carácter de puntuación, al menos tan largo como
+el texto.</p>
+<p>Normalmente, no hay niveles asignados a ciertos caracteresm ya que la estructura
+se determian a partir de la sucesión de encabezados. Sin embargo se propone
+la siguiente convención que es usada en la guía de estilo para código en Python</p>
+</div></blockquote>
+<ul class="simple">
+<li>#, Encabezados</li>
+<li>*, Capítulos</li>
+<li>=, Secciones</li>
+<li>-, Subsecciones</li>
+<li>^, Subsubsecciones</li>
+</ul>
+</div>
+<div class="section" id="imagenes">
+<h2>Imágenes<a class="headerlink" href="#imagenes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Sphinx soporta una directiva de imagen que es utilidada asi</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">imagen</span> <span class="p">::</span> <span class="o">/</span><span class="n">imagenes</span><span class="o">/</span><span class="n">imagen</span><span class="o">.</span><span class="n">jpg</span>
+</pre></div>
+</div>
+<p>Cuando se usa dentro de Sphinx, el nombre de archivo dado debe ser relativo al
+archivo de origen.</p>
+</div>
+<div class="section" id="archivos-separados-por-comas-csv">
+<h2>Archivos separados por comas (CSV)<a class="headerlink" href="#archivos-separados-por-comas-csv" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El lenguaje restructurado usado en Sphinx tiene la capacidad de leer un
+arhivo separado por comas, la directiva que se ocupa es la siguiente</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">csv</span><span class="o">-</span><span class="n">table</span><span class="p">::</span> <span class="n">Tabla</span> <span class="n">de</span> <span class="n">prueba</span>
+    <span class="p">:</span><span class="n">file</span><span class="p">:</span> <span class="o">./</span><span class="n">csv</span><span class="o">/</span><span class="n">ejemplo</span><span class="o">.</span><span class="n">csv</span>
+    <span class="p">:</span><span class="n">header</span><span class="o">-</span><span class="n">rows</span><span class="p">:</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Mostrandose de la siguiente forma:</p>
+<table border="1" class="docutils" id="id3">
+<caption><span class="caption-text">Tabla de prueba</span><a class="headerlink" href="#id3" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">id</th>
+<th class="head">frec</th>
+<th class="head">anio</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>0.558</td>
+<td>2002</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>0.543</td>
+<td>2002</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td>0.256</td>
+<td>2002</td>
+</tr>
+<tr class="row-odd"><td>4</td>
+<td>0.058</td>
+<td>2002</td>
+</tr>
+<tr class="row-even"><td>5</td>
+<td>0.158</td>
+<td>2002</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>0.358</td>
+<td>2002</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ecuaciones">
+<h2>Ecuaciones<a class="headerlink" href="#ecuaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>reStructuredText en conjunto con LaTeX permiten la inserción de ecuaciones
+matemáticas de tal manera que su visualización sea elegante y lo más parecida
+a la connotacion matemática convencional.</p>
+<p>Por ejemplo:</p>
+<p>Combinación lineal ponderada</p>
+<div class="math notranslate nohighlight">
+\[S_j = \sum_{i}^{I}w_i x_{ij}\]</div>
+<div class="line-block">
+<div class="line">S =  Agregación del modelo multicriterio</div>
+<div class="line">w =  peso  del  criterio</div>
+<div class="line">x =  valor  del  criterio  (Se  obtiene  de  la  función  de  valor  discreta  o  continua)</div>
+<div class="line">i =  criterios  de  decisión</div>
+<div class="line">j =  alternativas</div>
+</div>
+</div>
+<div class="section" id="module-example">
+<span id="codigos"></span><h2>Códigos<a class="headerlink" href="#module-example" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><a class="reference external" href="https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/ShowingCodeExamplesInSphinx.html">https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/ShowingCodeExamplesInSphinx.html</a></p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">Fibonacci_12</span><span class="o">&lt;-</span><span class="nf">numeric</span><span class="p">(</span><span class="m">12</span><span class="p">)</span>
+<span class="n">Fibonacci_12[1]</span><span class="o">&lt;-</span><span class="n">Fibonacci_12[2]</span><span class="o">&lt;-</span><span class="m">1</span>
+<span class="nf">for</span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">3</span><span class="o">:</span><span class="m">12</span><span class="p">){</span><span class="n">Fibonacci_12[i]</span><span class="o">&lt;-</span><span class="n">Fibonacci_12[i</span><span class="m">-2</span><span class="n">]</span><span class="o">+</span><span class="n">Fibonacci_12[i</span><span class="m">-1</span><span class="n">]</span><span class="p">}</span>
+<span class="n">Fibonacci_12</span>
+</pre></div>
+</div>
+<p>The literal blocks are now highlighted as HTML, until a new directive is found.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;&lt;</span><span class="nt">head</span><span class="p">&gt;&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>This is a text.<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">101</span><span class="p">):</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="notas-a-pie-de-pagina">
+<h2>Notas a pie de página<a class="headerlink" href="#notas-a-pie-de-pagina" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para colocar notas a pie de página seguir el siguiente ejemplo:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Énfasis</span> <span class="p">[</span><span class="c1">#f1]   &quot;A dos hombres que viven el mismo número de años,</span>
+<span class="n">el</span> <span class="n">mundo</span> <span class="n">les</span> <span class="n">proporciona</span> <span class="n">siempre</span> <span class="n">la</span> <span class="n">misma</span> <span class="n">cantidad</span> <span class="n">de</span> <span class="n">experiencias</span><span class="o">.</span>
+<span class="n">A</span> <span class="n">nosotros</span> <span class="n">nos</span> <span class="n">corresponde</span> <span class="n">tener</span> <span class="n">conciencia</span> <span class="n">de</span> <span class="n">ellas</span><span class="o">.</span>
+<span class="n">Sentir</span> <span class="n">la</span> <span class="n">propia</span> <span class="n">vida</span><span class="p">,</span> <span class="n">su</span> <span class="n">rebelión</span><span class="p">,</span> <span class="n">su</span> <span class="n">libertad</span><span class="p">,</span> <span class="n">y</span> <span class="n">lo</span> <span class="n">más</span> <span class="n">posible</span><span class="p">,</span>
+<span class="n">es</span> <span class="n">vivir</span> <span class="n">lo</span> <span class="n">más</span> <span class="n">posible</span><span class="o">.</span><span class="s2">&quot; [#f2]_</span>
+
+<span class="o">..</span> <span class="n">rubric</span><span class="p">::</span> <span class="n">Notas</span>
+
+<span class="o">..</span> <span class="p">[</span><span class="c1">#f1] Fuerza de la articulación o en la entonación con la que se quiere destacar</span>
+ <span class="n">un</span> <span class="n">aspecto</span> <span class="n">de</span> <span class="n">lo</span> <span class="n">que</span> <span class="n">se</span> <span class="n">dice</span>
+<span class="o">..</span> <span class="p">[</span><span class="c1">#f2] &quot;El mito del Sísifo&quot; (1942) - Albert Camus</span>
+</pre></div>
+</div>
+<p>La manera de visualización en la página es la siguiente:</p>
+<p>Énfasis <a class="footnote-reference" href="#f1" id="id1">[1]</a>   … «A dos hombres que viven el mismo número de años,
+el mundo les proporciona siempre la misma cantidad de experiencias.
+A nosotros nos corresponde tener conciencia de ellas.
+Sentir la propia vida, su rebelión, su libertad, y lo más posible,
+es vivir lo más posible.» <a class="footnote-reference" href="#f2" id="id2">[2]</a></p>
+<p class="rubric">Notas</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Fuerza de la articulación o en la entonación con la que se quiere destacar
+un aspecto de lo que se dice</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>«El mito del Sísifo» (1942) - Albert Camus</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="presion_social.html" class="btn btn-neutral float-left" title="Presión social" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, LANCIS APC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
