@@ -22,7 +22,8 @@ Zona de estudio
   valle de México E.Vivoni
 - Agebs de la ciudad de México  INEGI
 - Uso de suelo y vegetación serie VI INEGI
-- Edafología INEGI
+- `Edafología INEGI`_
+
 
 Datos históricos de precipitación, temperatura y evapotranspiración
 ======================================================================
@@ -66,6 +67,11 @@ Datos de escenarios de cambio climático
   RCP 8.5: Incremento de las emisiones de GEI a lo largo del tiempo.
   La temperatura probablemente no excede los 4ºC.
 
+
+
+
+
+.. _`Edafología INEGI`: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search;jsessionid=39BB001F56D9D69BECA317CC4EF400CC#/metadata/19e432ad-a94c-4cbd-add6-67822fa63dfe
 
 swat_area. Polígono de la zona de estudio para el Valle de México
 
