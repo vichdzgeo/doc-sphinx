@@ -22,7 +22,8 @@ Zona de estudio
   valle de México E.Vivoni
 - Agebs de la ciudad de México  INEGI
 - Uso de suelo y vegetación serie VI INEGI
-- Edafología INEGI 
+- Edafología INEGI
+
 Datos históricos de precipitación, temperatura y evapotranspiración
 ======================================================================
 - Prec precipitación diaria en formato raster para el intervalo de tiempo de 01 de
@@ -134,9 +135,6 @@ Precipitación
 =======================
 Precipitación histórica
 =======================
-
-
-
 
 
 ************
