@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="es" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Balance hídrico &mdash; documentación de MEGADAPT - 1.0.0</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/translations.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Agua superficial" href="agua_superficial.html" />
+    <link rel="prev" title="Clima urbano" href="clima.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MEGADAPT
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Tabla de contenido:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="sleuth.html">Crecimiento Urbano</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clima.html">Clima urbano</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Balance hídrico</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#insumos">Insumos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#zona-de-estudio">Zona de estudio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datos-historicos-de-precipitacion-temperatura-y-evapotranspiracion">Datos históricos de precipitación, temperatura y evapotranspiración</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#datos-de-escenarios-de-cambio-climatico">Datos de escenarios de cambio climático</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#procedimiento">Procedimiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#escorrentia">Escorrentía</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="agua_superficial.html">Agua superficial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="salud.html">Riesgo a la salud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="escasez.html">Escasez</a></li>
+<li class="toctree-l1"><a class="reference internal" href="presion_social.html">Presión social</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guia_documentacion.html">Guía para documentar con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="funciones_valor.html">Funciones de valor</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MEGADAPT</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Balance hídrico</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/escorrentia.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="balance-hidrico">
+<h1>Balance hídrico<a class="headerlink" href="#balance-hidrico" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Este modelo simula el escurrimiento superficial de las 244 subcuencas altas
+en la periferia de la Ciudad de México. Cada subcuenca se dividió hasta en seis
+bandas de elevación para estimar el escurrimiento acumulativo generado por la
+heterogeneidad de la precipitación, la evapotranspiración y la cobertura
+vegetal. Este modelo funciona con base en la curva numérica (CN) del método
+SCS-CN desarrollado por el Servicio de Conservación de Suelos de Estados Unidos.</p>
+<div class="section" id="insumos">
+<h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="zona-de-estudio">
+<h3>Zona de estudio<a class="headerlink" href="#zona-de-estudio" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li>swat_master.shp archivo vectorial que contine 244 subcuencas hidrológicas
+de la zona de estudio E.Vivoni</li>
+<li>swat_area.shp archivo vectorial que contiene la región de estudio para todo el
+valle de México E.Vivoni</li>
+<li>Agebs de la ciudad de México  INEGI</li>
+</ul>
+</div>
+<div class="section" id="datos-historicos-de-precipitacion-temperatura-y-evapotranspiracion">
+<h3>Datos históricos de precipitación, temperatura y evapotranspiración<a class="headerlink" href="#datos-historicos-de-precipitacion-temperatura-y-evapotranspiracion" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li>Prec precipitación diaria en formato raster para el intervalo de tiempo de 01 de
+enero de 1993 al 31 de diciembre del 2013 - Livneh et al 2015</li>
+<li>TA temperatura promedio diaria en formato raster para el intervalo de tiempo de 01 de
+enero de 1993 al 31 de diciembre del 2013 - Livneh et al 2015</li>
+<li>ETA evapotranspiración promedio diaria en formato raster para el intervalo de tiempo
+de 01 de enero de 1993 al 31 de diciembre del 2013 - Livneh et al 2015</li>
+</ul>
+</div>
+<div class="section" id="datos-de-escenarios-de-cambio-climatico">
+<h3>Datos de escenarios de cambio climático<a class="headerlink" href="#datos-de-escenarios-de-cambio-climatico" title="Enlazar permanentemente con este título">¶</a></h3>
+<ul class="simple">
+<li>he45Prec55 12 archivos raster (1 por mes) que expresan el promedio de la
+precipitación mensual total expresada en mm. RCP 4.5</li>
+<li>he45Prec85 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 4.5</li>
+<li>he85Prec55 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 8.5</li>
+<li>he85Prec85 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 8.5</li>
+<li>he45TA55 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 4.5</li>
+<li>he45TA85 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 4.5</li>
+<li>he85TA55 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 8.5</li>
+<li>he85TA85 12 archivos raster (1 por mes) que expresan el promedio de la
+temperatura promedio mensual total expresada en mm. RCP 8.5</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>he HadGEM2-ES 2075-2099 Modelo climático del sistema terrestre</p>
+<p>RCP 4.5: Escenario de estabilización. El forzamiento radiativo se estabiliza un
+poco luego del 2100. La temperatura muy probablemente excede los 2ºC.</p>
+<p class="last">RCP 8.5: Incremento de las emisiones de GEI a lo largo del tiempo.
+La temperatura probablemente no excede los 4ºC.</p>
+</div>
+<p>swat_area. Polígono de la zona de estudio para el Valle de México</p>
+</div>
+</div>
+<div class="section" id="procedimiento">
+<h2>Procedimiento<a class="headerlink" href="#procedimiento" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Objetivo:</p>
+<p>Extraer de los datos raster de Livneh de la serie de tiempo (1993-2013)
+los promedios mensuales de las variables de precipitación acumulada mensual, temperatura y
+evapotranspiración para la zona de estudio.</p>
+<p>códigos:</p>
+<ul class="simple">
+<li>promedios_historico_ta.py</li>
+<li>promedios_historico_prec.py</li>
+<li>promedios_historico_pet.py</li>
+</ul>
+<p>salida:</p>
+<ul class="simple">
+<li>prom_mens_93_13.csv</li>
+</ul>
+<table border="1" class="docutils" id="id1">
+<caption><span class="caption-text">Promedios mensuales de Prec,TA,ETA (1993 - 2013)</span><a class="headerlink" href="#id1" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">variable</th>
+<th class="head">mes_1</th>
+<th class="head">mes_2</th>
+<th class="head">mes_3</th>
+<th class="head">mes_4</th>
+<th class="head">mes_5</th>
+<th class="head">mes_6</th>
+<th class="head">mes_7</th>
+<th class="head">mes_8</th>
+<th class="head">mes_9</th>
+<th class="head">mes_10</th>
+<th class="head">mes_11</th>
+<th class="head">mes_12</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>pet</td>
+<td>17.01884417</td>
+<td>17.82265979</td>
+<td>18.88833351</td>
+<td>19.93919631</td>
+<td>19.96460281</td>
+<td>19.31690485</td>
+<td>19.11065723</td>
+<td>19.95508556</td>
+<td>20.5548794</td>
+<td>20.23862173</td>
+<td>18.98574274</td>
+<td>17.63722043</td>
+</tr>
+<tr class="row-odd"><td>prec</td>
+<td>10.67429506</td>
+<td>17.92052517</td>
+<td>13.50504667</td>
+<td>27.8273077</td>
+<td>56.84227211</td>
+<td>136.6042498</td>
+<td>142.0654189</td>
+<td>140.9220287</td>
+<td>137.3964919</td>
+<td>55.53519395</td>
+<td>19.64176554</td>
+<td>17.96883706</td>
+</tr>
+<tr class="row-even"><td>ta</td>
+<td>10.41632179</td>
+<td>11.77556615</td>
+<td>13.45395419</td>
+<td>15.10591887</td>
+<td>15.65038701</td>
+<td>15.12286707</td>
+<td>14.44101309</td>
+<td>14.36755776</td>
+<td>14.06378572</td>
+<td>13.12696978</td>
+<td>11.69997131</td>
+<td>10.46237202</td>
+</tr>
+</tbody>
+</table>
+<p>descarga el archivo  <a class="reference download internal" download="" href="_downloads/3325401aa137b9de1ef19ac72cbc9c83/prom_mens_93_13.csv"><code class="xref download docutils literal notranslate"><span class="pre">prom_mens_93_13.csv</span></code></a>.</p>
+<p>De los raster de los escenarios de cambio climatico, se extrae el promedio
+mensual de los pixeles para la zona de estudio</p>
+<ul class="simple">
+<li>he45Prec55</li>
+<li>he45Prec85</li>
+<li>he85Prec55</li>
+<li>he85Prec85</li>
+</ul>
+<p>salida</p>
+<table border="1" class="docutils" id="id2">
+<caption><span class="caption-text">Promedios mensuales de escenarios de cambio climático</span><a class="headerlink" href="#id2" title="Enlace permanente a esta tabla">¶</a></caption>
+<colgroup>
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Source</th>
+<th class="head">etc_1</th>
+<th class="head">etc_2</th>
+<th class="head">etc_3</th>
+<th class="head">etc_4</th>
+<th class="head">etc_5</th>
+<th class="head">etc_6</th>
+<th class="head">etc_7</th>
+<th class="head">etc_8</th>
+<th class="head">etc_9</th>
+<th class="head">etc_10</th>
+<th class="head">etc_11</th>
+<th class="head">etc_12</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>he45prec85</td>
+<td>10.1879845470</td>
+<td>9.2039488081</td>
+<td>15.3319212390</td>
+<td>46.0366884260</td>
+<td>86.3615355970</td>
+<td>178.7891210300</td>
+<td>159.4311519700</td>
+<td>139.4484157600</td>
+<td>140.2049617500</td>
+<td>59.4373152040</td>
+<td>9.0370295228</td>
+<td>5.6053205977</td>
+</tr>
+<tr class="row-odd"><td>he45prec55</td>
+<td>10.5627682020</td>
+<td>8.9935789586</td>
+<td>15.1201025070</td>
+<td>42.5252905690</td>
+<td>88.3586128590</td>
+<td>170.9149444200</td>
+<td>157.2144472300</td>
+<td>137.1552601800</td>
+<td>136.6691465800</td>
+<td>53.5650535680</td>
+<td>9.3647843590</td>
+<td>6.1800517612</td>
+</tr>
+<tr class="row-even"><td>he85prec55</td>
+<td>12.3629144600</td>
+<td>8.6083637846</td>
+<td>14.0579708920</td>
+<td>42.0364000030</td>
+<td>86.5502856900</td>
+<td>174.8885021200</td>
+<td>151.8903059900</td>
+<td>124.6272376700</td>
+<td>135.3666024100</td>
+<td>56.6842478880</td>
+<td>9.3736661569</td>
+<td>6.3530571567</td>
+</tr>
+<tr class="row-odd"><td>he85prec85</td>
+<td>11.1625559170</td>
+<td>8.6579076391</td>
+<td>15.7660059070</td>
+<td>42.5582326040</td>
+<td>85.1253979140</td>
+<td>173.2049785000</td>
+<td>131.8323860800</td>
+<td>105.2340775500</td>
+<td>138.9580036800</td>
+<td>74.0395302280</td>
+<td>10.7191500170</td>
+<td>5.9321580076</td>
+</tr>
+</tbody>
+</table>
+<p>descarga el archivo  <a class="reference download internal" download="" href="_downloads/08f91bab3ded6eca0d702726c2379b1a/prom_prec_esc.csv"><code class="xref download docutils literal notranslate"><span class="pre">prom_prec_esc.csv</span></code></a>.</p>
+</div>
+<div class="section" id="escorrentia">
+<h2>Escorrentía<a class="headerlink" href="#escorrentia" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="agua_superficial.html" class="btn btn-neutral float-right" title="Agua superficial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="clima.html" class="btn btn-neutral float-left" title="Clima urbano" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, LANCIS APC
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
