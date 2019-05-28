@@ -21,7 +21,8 @@ Zona de estudio
 - swat_area.shp archivo vectorial que contiene la región de estudio para todo el
   valle de México E.Vivoni
 - Agebs de la ciudad de México  INEGI
-
+- Uso de suelo y vegetación serie VI INEGI
+- Edafología INEGI 
 Datos históricos de precipitación, temperatura y evapotranspiración
 ======================================================================
 - Prec precipitación diaria en formato raster para el intervalo de tiempo de 01 de
