@@ -8,9 +8,9 @@ Insumos
 Issues
 *******
 
-códigos
+Códigos
 *******
 
 
-Salida
+Salidas
 ********

@@ -18,7 +18,7 @@ Configuración
 
 .. toctree::
    :maxdepth: 2
-   :caption: Tabla de contenido:
+   :caption: Modelos:
 
    sleuth
    clima
