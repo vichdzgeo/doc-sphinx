@@ -70,9 +70,14 @@ Datos de escenarios de cambio climático
 
 
 
+
+.. _swat_master.shp archivo vectorial que contine 244 subcuencas hidrológicas de la zona de estudio E.Vivoni: http://magrat.mine.nu:8088/geonetwork/
+.. _Agebs de la ciudad de México  INEGI: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/6207036e-a661-440f-aebb-0fac5325d210
+.. _Uso de suelo y vegetación serie VI INEGI: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/4a984bc9-0486-4b97-ab4a-eb82b67bcb9e
 .. _Edafología INEGI: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search;jsessionid=39BB001F56D9D69BECA317CC4EF400CC#/metadata/19e432ad-a94c-4cbd-add6-67822fa63dfe
 
-swat_area. Polígono de la zona de estudio para el Valle de México
+
+
 
 
 Issues

@@ -27,8 +27,8 @@ Configuración
    salud
    escasez
    presion_social
-   guia_documentacion
-   funciones_valor
+..   guia_documentacion
+..   funciones_valor
 
 
 Indices and tablas
