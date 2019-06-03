@@ -1,4 +1,4 @@
-################
+
 Balance hídrico
 ################
 
@@ -11,17 +11,16 @@ SCS-CN desarrollado por el Servicio de Conservación de Suelos de Estados Unidos
 
 
 
-********
 Insumos
 ********
+
 Zona de estudio
 =================
-- swat_master.shp archivo vectorial que contine 244 subcuencas hidrológicas
-  de la zona de estudio E.Vivoni
+- `swat_master.shp archivo vectorial que contine 244 subcuencas hidrológicas de la zona de estudio E.Vivoni`_
 - swat_area.shp archivo vectorial que contiene la región de estudio para todo el
-  valle de México E.Vivoni
-- Agebs de la ciudad de México  INEGI
-- Uso de suelo y vegetación serie VI INEGI
+  valle de México
+- `Agebs de la ciudad de México  INEGI`_
+- `Uso de suelo y vegetación serie VI INEGI`_
 - `Edafología INEGI`_
 
 
@@ -71,17 +70,27 @@ Datos de escenarios de cambio climático
 
 
 
-.. _`Edafología INEGI`: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search;jsessionid=39BB001F56D9D69BECA317CC4EF400CC#/metadata/19e432ad-a94c-4cbd-add6-67822fa63dfe
+.. _Edafología INEGI: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search;jsessionid=39BB001F56D9D69BECA317CC4EF400CC#/metadata/19e432ad-a94c-4cbd-add6-67822fa63dfe
 
 swat_area. Polígono de la zona de estudio para el Valle de México
 
 
+Issues
+*******
 
-***************
+códigos
+*******
+
+
+Salida
+********
+
+
+
 Procedimiento
 ***************
 
-================
+
 Series de tiempo
 ================
 
@@ -110,7 +119,7 @@ salida:
 
 descarga el archivo  :download:`prom_mens_93_13.csv <../../mod_escorrentia/precipitacion_historica/salida/prom_mens_93_13.csv>`.
 
-=======================
+
 Delta de precipitación
 =======================
 
@@ -134,15 +143,12 @@ descarga el archivo  :download:`prom_prec_esc.csv <../../mod_escorrentia/deltas_
 
 
 
-**************
+
 Precipitación
 ***************
 
-=======================
 Precipitación histórica
 =======================
 
-
-************
 Escorrentía
 ************

@@ -93,7 +93,18 @@
 <li class="toctree-l3"><a class="reference internal" href="#datos-de-escenarios-de-cambio-climatico">Datos de escenarios de cambio climático</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#procedimiento">Procedimiento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#issues">Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codigos">códigos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#salida">Salida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#procedimiento">Procedimiento</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#series-de-tiempo">Series de tiempo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#delta-de-precipitacion">Delta de precipitación</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#precipitacion">Precipitación</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#precipitacion-historica">Precipitación histórica</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#escorrentia">Escorrentía</a></li>
 </ul>
 </li>
@@ -180,12 +191,11 @@ SCS-CN desarrollado por el Servicio de Conservación de Suelos de Estados Unidos
 <div class="section" id="zona-de-estudio">
 <h3>Zona de estudio<a class="headerlink" href="#zona-de-estudio" title="Enlazar permanentemente con este título">¶</a></h3>
 <ul class="simple">
-<li>swat_master.shp archivo vectorial que contine 244 subcuencas hidrológicas
-de la zona de estudio E.Vivoni</li>
+<li><a href="#id3"><span class="problematic" id="id4">`swat_master.shp archivo vectorial que contine 244 subcuencas hidrológicas de la zona de estudio E.Vivoni`_</span></a></li>
 <li>swat_area.shp archivo vectorial que contiene la región de estudio para todo el
-valle de México E.Vivoni</li>
-<li>Agebs de la ciudad de México  INEGI</li>
-<li>Uso de suelo y vegetación serie VI INEGI</li>
+valle de México</li>
+<li><a href="#id5"><span class="problematic" id="id6">`Agebs de la ciudad de México  INEGI`_</span></a></li>
+<li><a href="#id7"><span class="problematic" id="id8">`Uso de suelo y vegetación serie VI INEGI`_</span></a></li>
 <li><a class="reference external" href="http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search;jsessionid=39BB001F56D9D69BECA317CC4EF400CC#/metadata/19e432ad-a94c-4cbd-add6-67822fa63dfe">Edafología INEGI</a></li>
 </ul>
 </div>
@@ -231,8 +241,19 @@ La temperatura probablemente no excede los 4ºC.</p>
 <p>swat_area. Polígono de la zona de estudio para el Valle de México</p>
 </div>
 </div>
+<div class="section" id="issues">
+<h2>Issues<a class="headerlink" href="#issues" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="codigos">
+<h2>códigos<a class="headerlink" href="#codigos" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="salida">
+<h2>Salida<a class="headerlink" href="#salida" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
 <div class="section" id="procedimiento">
 <h2>Procedimiento<a class="headerlink" href="#procedimiento" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="series-de-tiempo">
+<h3>Series de tiempo<a class="headerlink" href="#series-de-tiempo" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Objetivo:</p>
 <p>Extraer de los datos raster de Livneh de la serie de tiempo (1993-2013)
 los promedios mensuales de las variables de precipitación acumulada mensual, temperatura y
@@ -326,6 +347,9 @@ evapotranspiración para la zona de estudio.</p>
 </tbody>
 </table>
 <p>descarga el archivo  <a class="reference download internal" download="" href="_downloads/391b71ad3aaac97ae4a74af3a14cecd2/prom_mens_93_13.csv"><code class="xref download docutils literal notranslate"><span class="pre">prom_mens_93_13.csv</span></code></a>.</p>
+</div>
+<div class="section" id="delta-de-precipitacion">
+<h3>Delta de precipitación<a class="headerlink" href="#delta-de-precipitacion" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>De los raster de los escenarios de cambio climatico, se extrae el promedio
 mensual de los pixeles para la zona de estudio</p>
 <ul class="simple">
@@ -428,6 +452,13 @@ mensual de los pixeles para la zona de estudio</p>
 </tbody>
 </table>
 <p>descarga el archivo  <a class="reference download internal" download="" href="_downloads/5d5e6d49207898febaa8e60771f2097e/prom_prec_esc.csv"><code class="xref download docutils literal notranslate"><span class="pre">prom_prec_esc.csv</span></code></a>.</p>
+</div>
+</div>
+<div class="section" id="precipitacion">
+<h2>Precipitación<a class="headerlink" href="#precipitacion" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="precipitacion-historica">
+<h3>Precipitación histórica<a class="headerlink" href="#precipitacion-historica" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
 </div>
 <div class="section" id="escorrentia">
 <h2>Escorrentía<a class="headerlink" href="#escorrentia" title="Enlazar permanentemente con este título">¶</a></h2>
