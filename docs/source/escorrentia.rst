@@ -83,11 +83,11 @@ Datos de escenarios de cambio climático
 Issues
 *******
 
-códigos
+Códigos
 *******
 
 
-Salida
+Salidas
 ********
 
 
