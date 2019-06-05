@@ -9,7 +9,9 @@ heterogeneidad de la precipitación, la evapotranspiración y la cobertura
 vegetal. Este modelo funciona con base en la curva numérica (CN) del método
 SCS-CN desarrollado por el Servicio de Conservación de Suelos de Estados Unidos.
 
-
+.. image:: /imagenes/diagrama.jpg
+   :target: _images/diagrama.jpg
+   :alt: alternate text
 
 Insumos
 ********
@@ -82,6 +84,44 @@ Datos de escenarios de cambio climático
 
 Issues
 *******
+
+`#26 calcular las escorrentias de cada escenario de precipitación y urbanización, para cada cuenca swat por año`_
+
+`#27 implementar un algoritmo que recalcule el numero de curva dependiendo de el escenario urbano`_
+
+`#28 entender la estructura de datos y el procedimiento que usaron Vivoni y sus coloboradores para calcular la curva numérica`_
+
+`#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`_
+
+`#55 Hacer un script para preparar las capas de urbanización para ser usadas en el recálculo del número de curva`_
+
+`#57 calcular los números de curva para cada año de cada escenario de crecimiento urbano`_
+
+`#59 Hacer un script para calcular la evapotranspiración potencial a partir de la temperatura`_
+
+`#81 Generar una capa para el cálculo de curva númerica utilizando solo la serie VI de INEGI`_
+`#82 Calcular número y áreas de las cuencas con urbanización para el escenario histórico, 2040 y 2060`_
+
+`#86 Generar experimentos de simulación para calcular escurrimiento bajo los distintos escenarios de urbanización y de cambio climático`_
+
+`#91 Generar un dataframe que contenga los datos de precipitación y escorrentia por ageb para el escenario 8.5_8.5`_
+
+`#96 Generar para cada escenario de escorrentía un csv con precipitación anual por ageb y escorrentía anual por ageb`_
+
+
+.. _`#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`: https://github.com/sostenibilidad-unam/SHV/issues/29
+.. _`#26 calcular las escorrentias de cada escenario de precipitación y urbanización, para cada cuenca swat por año`: https://github.com/sostenibilidad-unam/SHV/issues/26
+.. _`#27 implementar un algoritmo que recalcule el numero de curva dependiendo de el escenario urbano`: https://github.com/sostenibilidad-unam/SHV/issues/27
+.. _`#28 entender la estructura de datos y el procedimiento que usaron Vivoni y sus coloboradores para calcular la curva numérica`: https://github.com/sostenibilidad-unam/SHV/issues/28
+.. _`#55 Hacer un script para preparar las capas de urbanización para ser usadas en el recálculo del número de curva`: https://github.com/sostenibilidad-unam/SHV/issues/55
+.. _`#57 calcular los números de curva para cada año de cada escenario de crecimiento urbano`: https://github.com/sostenibilidad-unam/SHV/issues/57
+.. _`#59 Hacer un script para calcular la evapotranspiración potencial a partir de la temperatura`: https://github.com/sostenibilidad-unam/SHV/issues/59
+.. _`#81 Generar una capa para el cálculo de curva númerica utilizando solo la serie VI de INEGI`: https://github.com/sostenibilidad-unam/SHV/issues/81
+.. _`#82 Calcular número y áreas de las cuencas con urbanización para el escenario histórico, 2040 y 2060`: https://github.com/sostenibilidad-unam/SHV/issues/82
+.. _`#86 Generar experimentos de simulación para calcular escurrimiento bajo los distintos escenarios de urbanización y de cambio climático`: https://github.com/sostenibilidad-unam/SHV/issues/86
+.. _`#91 Generar un dataframe que contenga los datos de precipitación y escorrentia por ageb para el escenario 8.5_8.5`: https://github.com/sostenibilidad-unam/SHV/issues/91
+.. _`#96 Generar para cada escenario de escorrentía un csv con precipitación anual por ageb y escorrentía anual por ageb`:  https://github.com/sostenibilidad-unam/SHV/issues/96
+
 
 Códigos
 *******
