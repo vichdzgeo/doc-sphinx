@@ -78,18 +78,18 @@ Datos de escenarios de cambio climático
 Issues
 *******
 
-- `#26 calcular las escorrentias de cada escenario de precipitación y urbanización, para cada cuenca swat por año`_
-- `#27 implementar un algoritmo que recalcule el numero de curva dependiendo de el escenario urbano`_
-- `#28 entender la estructura de datos y el procedimiento que usaron Vivoni y sus coloboradores para calcular la curva numérica`_
-- `#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`_
-- `#55 Hacer un script para preparar las capas de urbanización para ser usadas en el recálculo del número de curva`_
-- `#57 calcular los números de curva para cada año de cada escenario de crecimiento urbano`_
-- `#59 Hacer un script para calcular la evapotranspiración potencial a partir de la temperatura`_
-- `#81 Generar una capa para el cálculo de curva númerica utilizando solo la serie VI de INEGI`_
-- `#82 Calcular número y áreas de las cuencas con urbanización para el escenario histórico, 2040 y 2060`_
-- `#86 Generar experimentos de simulación para calcular escurrimiento bajo los distintos escenarios de urbanización y de cambio climático`_
-- `#91 Generar un dataframe que contenga los datos de precipitación y escorrentia por ageb para el escenario 8.5_8.5`_
-- `#96 Generar para cada escenario de escorrentía un csv con precipitación anual por ageb y escorrentía anual por ageb`_
+#. `#26 calcular las escorrentias de cada escenario de precipitación y urbanización, para cada cuenca swat por año`_
+#. `#27 implementar un algoritmo que recalcule el numero de curva dependiendo de el escenario urbano`_
+#. `#28 entender la estructura de datos y el procedimiento que usaron Vivoni y sus coloboradores para calcular la curva numérica`_
+#. `#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`_
+#. `#55 Hacer un script para preparar las capas de urbanización para ser usadas en el recálculo del número de curva`_
+#. `#57 calcular los números de curva para cada año de cada escenario de crecimiento urbano`_
+#. `#59 Hacer un script para calcular la evapotranspiración potencial a partir de la temperatura`_
+#. `#81 Generar una capa para el cálculo de curva númerica utilizando solo la serie VI de INEGI`_
+#. `#82 Calcular número y áreas de las cuencas con urbanización para el escenario histórico, 2040 y 2060`_
+#. `#86 Generar experimentos de simulación para calcular escurrimiento bajo los distintos escenarios de urbanización y de cambio climático`_
+#. `#91 Generar un dataframe que contenga los datos de precipitación y escorrentia por ageb para el escenario 8.5_8.5`_
+#. `#96 Generar para cada escenario de escorrentía un csv con precipitación anual por ageb y escorrentía anual por ageb`_
 
 
 .. _`#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`: https://github.com/sostenibilidad-unam/SHV/issues/29
