@@ -74,31 +74,22 @@ Datos de escenarios de cambio climático
 .. _TA temperatura promedio diaria en formato raster para el intervalo de tiempo de 01 de enero de 1993 al 31 de diciembre del 2013 - Livneh et al 2015: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/3927a1e3-615e-4555-b855-47daf6cfa1d1
 .. _PET evapotranspiración promedio diaria en formato raster para el intervalo de tiempo de 01 de enero de 1993 al 31 de diciembre del 2013 - Livneh et al 2015: http://magrat.mine.nu:8088/geonetwork/srv/spa/catalog.search#/metadata/2af95668-4c26-4359-900e-fb81b32e3c22
 
+
 Issues
 *******
 
-`#26 calcular las escorrentias de cada escenario de precipitación y urbanización, para cada cuenca swat por año`_
-
-`#27 implementar un algoritmo que recalcule el numero de curva dependiendo de el escenario urbano`_
-
-`#28 entender la estructura de datos y el procedimiento que usaron Vivoni y sus coloboradores para calcular la curva numérica`_
-
-`#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`_
-
-`#55 Hacer un script para preparar las capas de urbanización para ser usadas en el recálculo del número de curva`_
-
-`#57 calcular los números de curva para cada año de cada escenario de crecimiento urbano`_
-
-`#59 Hacer un script para calcular la evapotranspiración potencial a partir de la temperatura`_
-
-`#81 Generar una capa para el cálculo de curva númerica utilizando solo la serie VI de INEGI`_
-`#82 Calcular número y áreas de las cuencas con urbanización para el escenario histórico, 2040 y 2060`_
-
-`#86 Generar experimentos de simulación para calcular escurrimiento bajo los distintos escenarios de urbanización y de cambio climático`_
-
-`#91 Generar un dataframe que contenga los datos de precipitación y escorrentia por ageb para el escenario 8.5_8.5`_
-
-`#96 Generar para cada escenario de escorrentía un csv con precipitación anual por ageb y escorrentía anual por ageb`_
+- `#26 calcular las escorrentias de cada escenario de precipitación y urbanización, para cada cuenca swat por año`_
+- `#27 implementar un algoritmo que recalcule el numero de curva dependiendo de el escenario urbano`_
+- `#28 entender la estructura de datos y el procedimiento que usaron Vivoni y sus coloboradores para calcular la curva numérica`_
+- `#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`_
+- `#55 Hacer un script para preparar las capas de urbanización para ser usadas en el recálculo del número de curva`_
+- `#57 calcular los números de curva para cada año de cada escenario de crecimiento urbano`_
+- `#59 Hacer un script para calcular la evapotranspiración potencial a partir de la temperatura`_
+- `#81 Generar una capa para el cálculo de curva númerica utilizando solo la serie VI de INEGI`_
+- `#82 Calcular número y áreas de las cuencas con urbanización para el escenario histórico, 2040 y 2060`_
+- `#86 Generar experimentos de simulación para calcular escurrimiento bajo los distintos escenarios de urbanización y de cambio climático`_
+- `#91 Generar un dataframe que contenga los datos de precipitación y escorrentia por ageb para el escenario 8.5_8.5`_
+- `#96 Generar para cada escenario de escorrentía un csv con precipitación anual por ageb y escorrentía anual por ageb`_
 
 
 .. _`#29 calcular las escorrentías con los números de curva actuales para cada cuenca swat`: https://github.com/sostenibilidad-unam/SHV/issues/29
@@ -118,23 +109,21 @@ Issues
 Códigos
 *******
 
-promedio_histororico_prec.py
-promedios.py
-calculo_datos.py
-prec_vol_2.py
+#. c_01_promedios_historico_prec.py
+#. c_02_promedios_historico_pet.py
+#. c_03_promedios_historico_ta.py
+#. c_04_calculo_datos.py
+#. c_05_prec_vol_v2.py
+#. c_06_urb_a_curvan_v3.py
+#. c_07_evapotranspiracion_v2.py
+#. c_08_curva_numerica_usv_vi.py
+#. c_09_experimentos.R
+#. c_10_build_dataframe_nf_ff_v2.py
+#. c_11_build_dataframe_nf_ff_vol_v2.py
 
-urb_a_curvan_v3.py
+..  note::
 
-evapotranspiracion.v2
-
-curva_numerica_usvsvi.py
-
-script en R
-
-build_dataframe_nf_ff_v2.py
-
-
-
+	c_06 y c_08 dependen del siguiente archivo de funciones: curvaN.py
 
 
 

@@ -1,7 +1,16 @@
 import os
-'''
-Ejemplo de código
-'''
+
+
+def abc():
+    '''
+    **Objetivo**:  Este código estima a partir de la altura y la distancia a las
+    entradas del sistema Cutzamala la presión hidráulica por AGEB.
+
+    **Proyecto**:   MEGADAPT
+
+    **Autor (es)**: Fidel Serrano y Víctor Hernández
+    '''
+
 x = range(1,101)
 y = len(x)
 
