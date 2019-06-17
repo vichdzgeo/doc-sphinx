@@ -6,6 +6,12 @@
 Documentación del proyecto MEGADAPT
 ######################################
 
+
+.. image:: /imagenes/fi_megadapt_integracion_modelos_jun2019.png
+   :target: _images/fi_megadapt_integracion_modelos_jun2019.png
+   :alt: alternate text
+
+
 Requisitos
 ***********
 
@@ -27,8 +33,8 @@ Configuración
    salud
    escasez
    presion_social
-..   guia_documentacion
-..   funciones_valor
+   guia_documentacion
+   funciones_valor
 
 
 Indices and tablas

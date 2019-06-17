@@ -36,7 +36,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Índice" href="genindex.html" />
-    <link rel="search" title="Búsqueda" href="search.html" /> 
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Funciones de valor" href="funciones_valor.html" />
+    <link rel="prev" title="Presión social" href="presion_social.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -81,7 +83,7 @@
             
             
               <p class="caption"><span class="caption-text">Modelos:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="sleuth.html">Crecimiento Urbano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="clima.html">Clima urbano</a></li>
 <li class="toctree-l1"><a class="reference internal" href="escorrentia.html">Balance hídrico</a></li>
@@ -89,6 +91,26 @@
 <li class="toctree-l1"><a class="reference internal" href="salud.html">Riesgo a la salud</a></li>
 <li class="toctree-l1"><a class="reference internal" href="escasez.html">Escasez</a></li>
 <li class="toctree-l1"><a class="reference internal" href="presion_social.html">Presión social</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guía para documentar con Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#graficas">Gráficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parrafos">Párrafos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marcadores-de-linea">Marcadores de línea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#listas">Listas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#codigo-fuente">Código fuente</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tablas">Tablas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hipervinculos">Hipervinculos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#descargas">Descargas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#secciones">Secciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#imagenes">Imágenes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#archivos-separados-por-comas-csv">Archivos separados por comas (CSV)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ecuaciones">Ecuaciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-example">Códigos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notas-a-pie-de-pagina">Notas a pie de página</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="funciones_valor.html">Funciones de valor</a></li>
 </ul>
 
             
@@ -155,6 +177,39 @@
             
   <div class="section" id="guia-para-documentar-con-sphinx">
 <h1>Guía para documentar con Sphinx<a class="headerlink" href="#guia-para-documentar-con-sphinx" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="graficas">
+<h2>Gráficas<a class="headerlink" href="#graficas" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <span class="n">Ellipse</span>
+
+<span class="n">delta</span> <span class="o">=</span> <span class="mf">45.0</span> <span class="c1"># degrees</span>
+
+<span class="n">angles</span> <span class="o">=</span> <span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">360</span><span class="o">+</span><span class="n">delta</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
+<span class="n">ells</span> <span class="o">=</span> <span class="p">[</span><span class="n">Ellipse</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">angles</span><span class="p">]</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">ells</span><span class="p">:</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">set_clip_box</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">bbox</span><span class="p">)</span>
+    <span class="n">e</span><span class="o">.</span><span class="n">set_alpha</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">add_artist</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+<span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>(<a class="reference external" href="./../../ellipses.py">Source code</a>)</p>
+<div class="figure">
+<img alt="_images/ellipses.png" src="_images/ellipses.png" />
+</div>
+<p>Otro tipo</p>
+<p>(<a class="reference external" href="./../../scatter_demo2.py">Source code</a>)</p>
+<div class="figure">
+<img alt="_images/scatter_demo2.png" src="_images/scatter_demo2.png" />
+</div>
+</div>
 <div class="section" id="parrafos">
 <h2>Párrafos<a class="headerlink" href="#parrafos" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>El párrafo es el bloque más básico en un documento rst, los párrafos son
@@ -365,6 +420,16 @@ a la connotacion matemática convencional.</p>
 </div>
 <div class="section" id="module-example">
 <span id="codigos"></span><h2>Códigos<a class="headerlink" href="#module-example" title="Enlazar permanentemente con este título">¶</a></h2>
+<dl class="function">
+<dt id="example.grafica">
+<code class="descclassname">example.</code><code class="descname">grafica</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/example.html#grafica"><span class="viewcode-link">[fuente]</span></a><a class="headerlink" href="#example.grafica" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Esta funcion ….</p>
+<p>(<a class="reference external" href=".//guia_documentacion-1.py">Source code</a>, <a class="reference external" href=".//guia_documentacion-1.png">png</a>, <a class="reference external" href=".//guia_documentacion-1.hires.png">hires.png</a>, <a class="reference external" href=".//guia_documentacion-1.pdf">pdf</a>)</p>
+<div class="figure">
+<img alt="_images/guia_documentacion-1.png" src="_images/guia_documentacion-1.png" />
+</div>
+</dd></dl>
+
 <p><a class="reference external" href="https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/ShowingCodeExamplesInSphinx.html">https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/ShowingCodeExamplesInSphinx.html</a></p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">Fibonacci_12</span><span class="o">&lt;-</span><span class="nf">numeric</span><span class="p">(</span><span class="m">12</span><span class="p">)</span>
 <span class="n">Fibonacci_12[1]</span><span class="o">&lt;-</span><span class="n">Fibonacci_12[2]</span><span class="o">&lt;-</span><span class="m">1</span>
@@ -427,6 +492,15 @@ un aspecto de lo que se dice</td></tr>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="funciones_valor.html" class="btn btn-neutral float-right" title="Funciones de valor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="presion_social.html" class="btn btn-neutral float-left" title="Presión social" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

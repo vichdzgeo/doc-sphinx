@@ -1,7 +1,6 @@
 Funciones de valor
 ######################
 
-
 Logística
 **********
 Para la construcción de la función de valor
