@@ -2,6 +2,18 @@ Guía para documentar con Sphinx
 ###############################
 
 
+Gráficas
+*********
+
+.. plot:: ../../ellipses.py
+   :include-source:
+
+Otro tipo
+
+.. plot:: ../../scatter_demo2.py
+
+
+
 Párrafos
 **********
 El párrafo es el bloque más básico en un documento rst, los párrafos son
