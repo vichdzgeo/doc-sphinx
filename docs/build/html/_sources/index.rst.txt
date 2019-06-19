@@ -7,21 +7,19 @@ Documentación del proyecto MEGADAPT
 ######################################
 
 **Adaptación Dinámica Multi-Escalar En Megalópolis**
-Acción Autónoma, Cambio Institucional y Riesgo Socio-Hidrológico En La Ciudad de México
+  Acción Autónoma, Cambio Institucional y Riesgo Socio-Hidrológico En La Ciudad de México
 
 
-.. image:: /imagenes/logo_ja_wrigley_gios_2.png
-   :alt: alternate text
+|pic1| |pic2| |pic3|
 
-.. image:: /imagenes/logo_unam.png
-  :alt: alternate text
+.. |pic1| image:: /imagenes/logo_ja_wrigley_gios_2.png
+   :width: 25%
 
-.. image:: /imagenes/logo_iai.png
-    :alt: alternate text
+.. |pic2| image:: /imagenes/logo_unam.png
+   :width: 25%
 
-.. image:: /imagenes/logo_nsf.tif
-   :alt: alternate text
-
+.. |pic3| image:: /imagenes/logo_iai.png
+   :width: 25%
 
 
 .. image:: /imagenes/fi_megadapt_integracion_modelos_jun2019.png
@@ -47,11 +45,14 @@ Configuración
    clima
    escorrentia
    agua_superficial
+   agua_subterranea
    salud
    escasez
-   presion_social
-   guia_documentacion
-   funciones_valor
+   modelacion_multicriterio
+   modelacion_agentes
+   .. presion_social
+   .. guia_documentacion
+   .. funciones_valor
 
 
 Indices and tablas

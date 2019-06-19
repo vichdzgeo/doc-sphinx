@@ -1,6 +1,6 @@
-##################
-Riesgo a la salud
-##################
+######################
+Riesgo para la salud
+######################
 
 Este modelo simula la incidencia de enfermedades (casos por cada 1,000 habitantes)
 en la Ciudad de México mediante la aplicación de dos modelos de regresión espacial,
