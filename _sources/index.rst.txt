@@ -5,8 +5,7 @@
 
 Documentación del proyecto MEGADAPT
 ######################################
-
-**Adaptación Dinámica Multi-Escalar En Megalópolis**
+  **Adaptación Dinámica Multi-Escalar En Megalópolis**
   Acción Autónoma, Cambio Institucional y Riesgo Socio-Hidrológico En La Ciudad de México
 
 
