@@ -14,16 +14,17 @@ Insumos
 
 Capas utilizadas para los tres escenarios:
 
+- Exclusión
+- Pendiente del terreno
+- Sombreado del terreno        
 - Vías de comunicación para la década de 1980
 - Vías de comunicación para la década de 1990
 - Vías de comunicación para la década del 2000
 - Vías de comunicación para la década del 2015
-- Crecimiento urbano para la década de 1980
-- Crecimiento urbano para la década de 1990
-- Crecimiento urbano para la década del 2000
-- Crecimiento urbano para la década del 2015
-- Pendiente del terreno
-- Sombreado del terreno
+- Zona urbana para la década de 1980
+- Zona urbana para la década del 1990
+- Zona urbana para la década del 2000
+
 
 Escenarios:
 ============
@@ -66,10 +67,10 @@ Cuerpos de agua, 100% de exclusión
 
 Issues
 *******
-Repositorio Planeación colaborativa
-- hacer un informe con descripción los resultados de SLEUTH # 837
-- Reportar las corridas que se han hecho y que hacen falta de SLEUTH # 458
-- Realizar pruebas estadísticas para evaluar calibraciones de SLEUTH # 852
+
+#. `# 837 hacer un informe con descripción los resultados de SLEUTH`_
+#. `# 458 Reportar las corridas que se han hecho y que hacen falta de SLEUTH`_
+#. `# 852 Realizar pruebas estadísticas para evaluar calibraciones de SLEUTH`_
 
 
 Códigos
@@ -79,7 +80,7 @@ sin códigos
 Salidas
 ********
 
-Son archivos para cada año tipo .tif apartir del año 2016 hasta el 2060:
+Son archivos para cada año de tipo .tif apartir del año 2016 hasta el 2060:
 
 -  urban_2016.tif
 -  ...
