@@ -54,9 +54,6 @@ Configuración
    escasez
    modelacion_multicriterio
    modelacion_agentes
-   .. presion_social
-   .. guia_documentacion
-   .. funciones_valor
 
 
 Indices and tablas

@@ -1,0 +1,444 @@
+set top_net [getTopNet $net]
+set SAVED_WITH_VERSION {2.6.0-RC1 made on Tue, 19 Jan 2016 11:20:20 -0400.  VCRevInfo 2771.  Installed on Windows}
+setDefaultCompareMode $net switch_to_matrix
+set x 1127
+set y 593
+set desc {description}
+set name {Acciones}
+set color white
+set iconUU {}
+set iconFont "-*-times-medium-r-normal-*-12-*-*-*-*-*"
+set winFont "-*-times-medium-r-normal-*-18-*-*-*-*-*"
+set width 400
+set height 144
+set clusterName {Acciones}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Acción colectiva}
+set desc {Cooperación entre vecinos para COMPARTIR AGUA,sabemos quien tiene cisterna más agua...recolección de basura, limpieza de espacios publicos}
+set x 129
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Captación de agua}
+set desc {Captura de agua de lluvia y reciclar el agua}
+set x 0
+set y 43
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Compra de agua}
+set desc {Pipas, garrafones}
+set x 1
+set y 86
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Modificación vivienda}
+set desc {Construcción de cisternas permanentes, escalones, (CONSTRUCCIÓN DE CISTERNA DESDE ORIGEN)Y PILETAS}
+set x 155
+set y 44
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Movilizaciones}
+set desc {Petición de agua e infraestructura (ej. bombas) a las autoridades (CERRAR CALLES, EJS VIALES) CALZADA ERMITA Y EJES) PARA EXIGIR EL DERECHO AL AGUA}
+set x 0
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 632
+set y 583
+set desc {Problemas}
+set name {Criterios}
+set color white
+set iconUU {}
+set iconFont "-*-times-medium-r-normal-*-12-*-*-*-*-*"
+set winFont "-*-times-medium-r-normal-*-18-*-*-*-*-*"
+set width 420
+set height 157
+set clusterName {Criterios}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Contaminación de agua}
+set desc {Mala calidad de agua de pipas, tambos, cisterna, etc. (MALA CALIDAD DEL AGUA POTABLE)}
+set x -2
+set y 2
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Crecimiento urbano}
+set desc {Incremento en la demanda y/o carga del servicio de agua y drenaje por la población (efectos del cambio de uso de suelo)}
+set x 190
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Desperdicio de agua}
+set desc {Por fugas, falta de conciencia del uso del agua, (DEJAN LAS LLAVES ABIERTAS PORQUE NO HAY HORARIO ESPECIFICO DE TANDEO)}
+set x 0
+set y 43
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Eficacia del servicio}
+set desc {Gestión del servicio de Drenaje y agua potable (ej. interferencia política, no llega la pipa, horario del tandeo, et (eL AGUA NO LLEGA A LA HORA NI DIA DEL TANDEO}
+set x 0
+set y 86
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Infraestructura insuficiente}
+set desc {la red de drenaje no tiene capacidad}
+set x 166
+set y 90
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Obstrucción de alcantarillado}
+set desc {Por basura, sedimentos, etc.}
+set x 180
+set y 47
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set x 877
+set y 398
+set desc {description}
+set name {Riesgos  socio-hidrológicos}
+set color white
+set iconUU {}
+set iconFont "-*-times-medium-r-normal-*-12-*-*-*-*-*"
+set winFont "-*-times-medium-r-normal-*-18-*-*-*-*-*"
+set width 349
+set height 22
+set clusterName {Riesgos  socio-hidrológicos}
+set clusterCompareWord {}
+makeCluster $net $x $y $name $desc
+clusterChangeColor $net $name $color
+setClusterIconUU $net $name $iconUU
+setClusterIconFont $net $name $iconFont
+setClusterTitleFont $net $name $winFont
+setClusterWinSize $net $name $width $height
+setClusterCompareWord $net $name $clusterCompareWord
+deIconizeCluster $net $name
+set name {Escasez de agua}
+set desc {description}
+set x -1
+set y -2
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Inundaciones}
+set desc {description}
+set x 139
+set y -1
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set name {Salud}
+set desc {description}
+set x 256
+set y 0
+set color {white}
+set iconUU {}
+set font {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+makeNode $net $clusterName $name $desc $x $y
+setNodeIconUU $net $name $iconUU
+setNodeColor $net $name $color
+setNodeFont $net $name $font
+set init {Riesgos  socio-hidrológicos}
+set final {Acciones}
+connectClusters $net $init $final
+set init {Acciones}
+set final {Criterios}
+connectClusters $net $init $final
+set init {Criterios}
+set final {Criterios}
+connectClusters $net $init $final
+set init {Criterios}
+set final {Riesgos  socio-hidrológicos}
+connectClusters $net $init $final
+set init {Riesgos  socio-hidrológicos}
+set final {Riesgos  socio-hidrológicos}
+connectClusters $net $init $final
+setNodeCompareWord  $net {Compra de agua} {Criterios} {important}
+setNodeCompareWord  $net {Crecimiento urbano} {Riesgos  socio-hidrológicos} {important}
+setNodeCompareWord  $net {Eficacia del servicio} {Riesgos  socio-hidrológicos} {important}
+setNodeCompareWord  $net {Escasez de agua} {Acciones} {important}
+setNodeCompareWord  $net {Inundaciones} {Acciones} {important}
+setNodeCompareWord  $net {Modificación vivienda} {Criterios} {important}
+setNodeCompareWord  $net {Movilizaciones} {Criterios} {important}
+setNetCompareWord $net {important}
+setNetClusterColor $net {white}
+setNetNodeColor $net {white}
+setNetClusterWinFont $net {-*-times-medium-r-normal-*-12-*-*-*-*-*}
+setNetClusterIconFont $net {-*-times-medium-r-normal-*-12-*-*-*-*-*}
+setNetNodeFont $net {-*-times-medium-r-normal-*-18-*-*-*-*-*}
+setFormulaType $net 0
+#Working on net 0
+catch {limitPowerOptions $net 2 0}
+c-network readAllCompares -network $net -source {
+3
+Acciones
+5
+Acción colectiva
+Captación de agua
+Compra de agua
+Modificación vivienda
+Movilizaciones
+Criterios
+6
+Contaminación de agua
+Crecimiento urbano
+Desperdicio de agua
+Eficacia del servicio
+Infraestructura insuficiente
+Obstrucción de alcantarillado
+Riesgos  socio-hidrológicos
+3
+Escasez de agua
+Inundaciones
+Salud
+
+3 0,0 2,1 1,2 
+ 0.000000  1.000000  0.000000 
+ 0.000000  1.000000  1.000000 
+ 1.000000  0.000000  1.000000 
+0
+1 1,0 
+
+1
+2 1,0 2,1 
+ 0.000000 
+
+2
+2 2,0 0,1 
+ 0.000000 
+
+0,0,1
+1 5,0 
+
+0,1,1
+1 3,0 
+
+0,2,1
+2 3,0 0,1 
+ 0.333333 
+
+0,3,1
+3 1,0 5,1 3,2 
+ 0.142857  0.166667 
+ 2.000000 
+
+0,4,1
+2 3,0 2,1 
+ 8.000000 
+
+1,0,1
+0 
+
+1,1,1
+1 5,0 
+
+1,2,1
+0 
+
+1,3,1
+0 
+
+1,4,1
+0 
+
+1,5,1
+0 
+
+1,0,2
+1 0,0 
+
+1,1,2
+2 1,0 0,1 
+ 1.000000 
+
+1,2,2
+1 0,0 
+
+1,3,2
+2 0,0 1,1 
+ 3.000000 
+
+1,4,2
+1 1,0 
+
+1,5,2
+1 1,0 
+
+2,0,0
+5 4,0 1,1 0,2 2,3 3,4 
+ 5.000000  1.000000  0.200000  2.000000 
+ 0.250000  0.111111  0.250000 
+ 0.200000  0.333333 
+ 4.000000 
+
+2,1,0
+3 3,0 0,1 4,2 
+ 2.000000  5.000000 
+ 4.000000 
+
+2,2,0
+1 2,0 
+
+2,0,2
+1 2,0 
+
+2,1,2
+1 2,0 
+
+2,2,2
+0 
+
+}
+ratings new -network $net -src {
+3
+Escasez de agua
+Inundaciones
+Salud
+0
+5
+Modificación de vivienda
+Movilizaciones
+Compra de agua
+Captación de agua
+Acción colectiva
+5 3
+2.000000 0.000000 0.000000 
+3.000000 0.000000 0.000000 
+1.000000 0.000000 0.000000 
+1.000000 0.000000 0.000000 
+2.000000 0.000000 0.000000 
+5 3
+1 0 0 
+1 0 0 
+1 0 0 
+1 0 0 
+1 0 0 
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+5
+Ausente
+Inconveniente
+Manejable
+Grave
+Crítica
+1.000000
+ 0.333333  0.250000  0.142857  0.111111  0.000000 
+ 0.500000  0.166667  0.125000  0.000000 
+ 0.250000  0.166667  0.000000 
+ 0.200000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+5
+Ausente
+Inconveniente
+Manejable
+Grave
+Crítica
+0.000000
+ 0.333333  0.250000  0.142857  0.111111  0.000000 
+ 0.500000  0.166667  0.125000  0.000000 
+ 0.250000  0.166667  0.000000 
+ 0.200000  0.000000 
+ 0.000000 
+0
+0
+1
+!DEFAULT_GROUPING!__!_!!______++++_
+5
+Ausente
+Inconveniente
+Manejable
+Grave
+Crítica
+0.000000
+ 0.333333  0.250000  0.142857  0.111111  0.000000 
+ 0.500000  0.166667  0.125000  0.000000 
+ 0.250000  0.166667  0.000000 
+ 0.200000  0.000000 
+ 0.000000 
+0
+0
+}
+
+set FORMAT 1
+recreateNetInsideFrameOnly $net

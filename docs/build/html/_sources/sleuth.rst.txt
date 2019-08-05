@@ -14,16 +14,15 @@ Insumos
 
 Capas utilizadas para los tres escenarios:
 
-- Exclusión
+- Restricciones de crecimiento
 - Pendiente del terreno
-- Sombreado del terreno        
 - Vías de comunicación para la década de 1980
 - Vías de comunicación para la década de 1990
 - Vías de comunicación para la década del 2000
 - Vías de comunicación para la década del 2015
 - Zona urbana para la década de 1980
-- Zona urbana para la década del 1990
-- Zona urbana para la década del 2000
+- Zona urbana para la década de 1990
+- Zona urbana para la década de 2000
 
 
 Escenarios:
@@ -31,9 +30,9 @@ Escenarios:
 
 **e04_s6_flores_v2_noairport_no11**
 
-- Exclusión
+- Restricciones de crecimiento
 
-Esta capa tiene distintos grados exclusión que caracteriza el uso de suelo y
+Esta capa tiene distintos grados de exclusión que caracteriza el uso de suelo y
 el grado de protección en áreas naturales
 
 Está compuesta por la siguiente información:
@@ -47,13 +46,13 @@ Semillas, 0% de exclusión
 
 **e04_s6_flores_v2_noairport_no11_excl_0**
 
-- Exclusión
+- Restricciones de crecimiento
 
 Esta capa no tiene áreas de exclusión
 
 **e04_s6_flores_v2_noairport_no11_excl_total**
 
-- Exclusión
+- Restricciones de crecimiento
 
 Esta capa tiene características de uso de suelo y de áreas naturales que presentan
 el 100% de exclusión
