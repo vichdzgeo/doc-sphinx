@@ -92,7 +92,15 @@
 <li class="toctree-l1"><a class="reference internal" href="escasez.html">Abastecimiento de agua</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modelacion_multicriterio.html">Modelación multicriterio</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Modelación basada en agentes</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#insumos">Insumos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insumos">Insumos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modelos-multicriterio">Modelos multicriterio</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#residentes">Residentes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sistema-de-aguas-de-la-ciudad-de-mexico-sacmex">Sistema de Aguas de la Ciudad de México (SACMEX)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#variables-geograficas-del-modelo">Variables geográficas del modelo:</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#issues">Issues</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#codigos">Códigos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#salidas">Salidas</a></li>
@@ -166,6 +174,132 @@
 <h1>Modelación basada en agentes<a class="headerlink" href="#modelacion-basada-en-agentes" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="insumos">
 <h2>Insumos<a class="headerlink" href="#insumos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="modelos-multicriterio">
+<h3>Modelos multicriterio<a class="headerlink" href="#modelos-multicriterio" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="residentes">
+<h4>Residentes<a class="headerlink" href="#residentes" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><a class="reference download internal" download="" href="_downloads/e3aad6c4ab79e4023b5c088673e4a4a3/I080316_OTR.sdmod"><code class="xref download docutils literal notranslate"><span class="pre">Iztapalapa</span></code></a>.</p>
+</div>
+<div class="section" id="sistema-de-aguas-de-la-ciudad-de-mexico-sacmex">
+<h4>Sistema de Aguas de la Ciudad de México (SACMEX)<a class="headerlink" href="#sistema-de-aguas-de-la-ciudad-de-mexico-sacmex" title="Enlazar permanentemente con este título">¶</a></h4>
+<p><a class="reference download internal" download="" href="_downloads/6fd5baf23d96c693eca07545479e1625/Modelo_sacmex_sesmo.sdmod"><code class="xref download docutils literal notranslate"><span class="pre">SACMEX</span></code></a>.</p>
+</div>
+</div>
+<div class="section" id="variables-geograficas-del-modelo">
+<h3>Variables geográficas del modelo:<a class="headerlink" href="#variables-geograficas-del-modelo" title="Enlazar permanentemente con este título">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="36%" />
+<col width="64%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Variables</th>
+<th class="head">Descripción</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>resident_potable_water_lacking_count</td>
+<td>Represent the population of each census block that does not have access to piped water in their houses</td>
+</tr>
+<tr class="row-odd"><td>censusblock_id</td>
+<td>An universal identifier of each census block that includes the municipality, and the state.</td>
+</tr>
+<tr class="row-even"><td>infrastructure_age</td>
+<td>Proxy for the age of infrastructure based on the sequence of urbanization periods in CDMX</td>
+</tr>
+<tr class="row-odd"><td>area</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>garbage_index</td>
+<td>Proxy of the amount of garbage produced in each census block</td>
+</tr>
+<tr class="row-odd"><td>sewer_system_pump_count</td>
+<td>Number of pumps to direct stormwater in the sewer system</td>
+</tr>
+<tr class="row-even"><td>waterquality_index</td>
+<td>Reports about the quality of the water per census block</td>
+</tr>
+<tr class="row-odd"><td>urbangrowth</td>
+<td>Proportion of urbanized area in a census block</td>
+</tr>
+<tr class="row-even"><td>criticalzone</td>
+<td>Areas of the city SACMEX considers critical because of the difficulties of providing potable water</td>
+</tr>
+<tr class="row-odd"><td>geographic_id</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>resident_potable_water_waste_perception</td>
+<td>Perception of residents about exportation potable water</td>
+</tr>
+<tr class="row-odd"><td>resident_potable_water_export_perception</td>
+<td>Perception of residents about net potable water exports</td>
+</tr>
+<tr class="row-even"><td>resident_diarrhea_per_capita</td>
+<td>Number of cases of Diarrheal diseases per 10000 individual in the year 2014</td>
+</tr>
+<tr class="row-odd"><td>resident_reports_potable_water_failure_count_per_year</td>
+<td>Number of reports of failures in the distribution potable water</td>
+</tr>
+<tr class="row-even"><td>resident_reports_sewer_failure_count_per_year</td>
+<td>Number of reports collected by sacmex about failure in the sewer system</td>
+</tr>
+<tr class="row-odd"><td>household_potable_system_lacking_percent</td>
+<td>Proportion of households without connection to potable water distribution infrastructure</td>
+</tr>
+<tr class="row-even"><td>household_sewer_system_lacking_percent</td>
+<td>Proportion of households without connection to the sewer system</td>
+</tr>
+<tr class="row-odd"><td>resident_income_per_capita</td>
+<td>Income per capita in dollars (by municipality)</td>
+</tr>
+<tr class="row-even"><td>resident_asset_index</td>
+<td>Resident asset index (by census block)</td>
+</tr>
+<tr class="row-odd"><td>resident_reports_flooding_per_year</td>
+<td>Frequency of flooding event in a year</td>
+</tr>
+<tr class="row-even"><td>household_days_no_potable_water_per_week_mean</td>
+<td>Average number of days in a week a census block is without water. Data from INEGI</td>
+</tr>
+<tr class="row-odd"><td>sewer_system_segment_count</td>
+<td>Number of segments of the sewer system in each census block</td>
+</tr>
+<tr class="row-even"><td>delegation_social_pressure</td>
+<td>Proxy for the attention government give to different delegations</td>
+</tr>
+<tr class="row-odd"><td>resident_count</td>
+<td>Total population per census block</td>
+</tr>
+<tr class="row-even"><td>potable_system_pressure</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>media_social_pressure</td>
+<td>Proxy for media report about water scarcity or flooding events</td>
+</tr>
+<tr class="row-even"><td>resident_reports_ponding_per_year</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>sewer_system_capacity_max</td>
+<td>Total population per census block</td>
+</tr>
+<tr class="row-even"><td>sewer_system_storm_drain_count</td>
+<td>Number of drainage per census block</td>
+</tr>
+<tr class="row-odd"><td>runoff_presence</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>subsidence_rate_per_year</td>
+<td>Rate of subsidence per year</td>
+</tr>
+<tr class="row-odd"><td>household_water_storage_tank_available_percent</td>
+<td>Proportion of houses with water storage tanks</td>
+</tr>
+<tr class="row-even"><td>resident_reports_potable_water_failure_count_per_area_year</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="section" id="issues">
 <h2>Issues<a class="headerlink" href="#issues" title="Enlazar permanentemente con este título">¶</a></h2>
